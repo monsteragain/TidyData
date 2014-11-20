@@ -6,7 +6,7 @@ columnSelections <- NULL
 # This function, run, implements top level cordination for the solution. A single call to this 
 # function gives the requisite results. The followng are the steps: 
 #
-#   1 - Check of the raw data is on the local disk, if not down load it. 
+#   1 - Check if the raw data is on the local disk, if not down load it. 
 #   2 - Initialize the selected columns by calling initColumnSelections().
 #   3 - Read in the activity label data. e.g. SLEEPING, WALKING, etc. 
 #   4 - call loadData() to build the train data. 
