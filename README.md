@@ -1,7 +1,7 @@
 Getting And Cleanng Data
 ========================
 
-Herein is a demonstration of how R scripting can be used to prepare raw data for analysis. Put another way, the raw data is processed into tidy data. This demonstartion uses raw data collected from smart phone devices worn by 30 volunteers in a research experiment. More details on the raw data and the generated tidy data set see the [Codebook.md](/CodeBook.md) file contained in this repository.
+Herein is a demonstration of how R scripting can be used to prepare raw data for analysis. Put another way, the raw data is processed into tidy data. This demonstartion uses raw data collected from smart phone devices worn by 30 volunteers in a research experiment. More details on the raw data and the generated tidy data set see the [Codebook.md](/Codebook.md) file contained in this repository.
 
 # Data Set Files
 
