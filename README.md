@@ -24,7 +24,7 @@ UCIHAR Dataset/
 
 # Script
 
-The run_analysis.R contains R code for this demonstration. The following outlines the operation of the script.
+The [run_analysis.R](run_analysis.R) contains R code for this demonstration. The following outlines the operation of the script.
 
   1. Check if the raw data is on the local disk, if not down load it. 
   2. Initialize the selected columns by calling initColumnSelections(). This function statically defines the requesite columns for mean and standard deviation. 
@@ -35,7 +35,7 @@ The run_analysis.R contains R code for this demonstration. The following outline
   7. Create average, mean, of each variable for each activity and each subject. (Order by activity then subject.)
   8. Write results to file *summary.txt*
 
-Because the sub structure for *test* and *train* have the same structure the *loadData()* function is coded and called twice. The following are the steps taken by *loadData()*: 
+Because the sub folder/directory for *test* and *train* have the same structure the *loadData()* function is coded and called twice. The following are the steps taken by *loadData()*: 
 
 1. Create the filePath
 2. Load the feature vector data. 
@@ -44,11 +44,11 @@ Because the sub structure for *test* and *train* have the same structure the *lo
 5. Append subject column
 6. Append activity column - this represented as numeric data but we convery to factors based on the activity labels.
 
-The majority of the script is coded using the base R libraries. The plyr library is used to in 7 and and does a lot of the heavy lift with great ease.
+The majority of the script is coded using the base R libraries. The plyr library is used in step 7 and and does a lot of the heavy lifting with great ease.
 
+# Environment 
 
-
-
-
-
-
+* R version 3.1.2 (2014-10-31) -- "Pumpkin Helmet", platform: x86_64-w64-mingw32.
+* Plyr Library Version - 1.8.1
+* R Studio Version 0.98.1049 – © 2009-2013 RStudio, Inc.
+* Microsoft Windows 8.1
