@@ -35,11 +35,11 @@ The [run_analysis.R](run_analysis.R) contains the R code for this demonstration.
   7. Create average, mean, of each variable for each activity and each subject. (Order by activity then by subject.)
   8. Write results to file *summary.txt*
 
-Because the sub folder/directory for *test* and *train* have the same structure the *loadData()* function is codes the common functionality and is the called twice. The following are the steps taken by *loadData()*: 
+Because the sub folder/directory for *test* and *train* have the same structure the *loadData()* function is coded as common functionality and is called twice. The following are the steps taken by *loadData()*: 
 
 1. Create the filePath
 2. Load the feature vector data. 
-3. Perform a projection, Codd parlance, operation to select the required fields from the featurs vector.
+3. Perform a projection, Codd parlance, operation to select the required fields from the features vector.
 4. Apply the standardizedVariableName to the new projected data frame from the previous step.
 5. Append subject column
 6. Append activity column - this is represented as numeric data but we convert to factors based on the activity labels.
