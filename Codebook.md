@@ -2,7 +2,7 @@
 
 # Introduction
 
-This demostration using the R programming language produced a tidy data set comprising averages of mean and std deviations columns from the raw data set. The raw data was produced by the *Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine*  experiment carried out by *International Workshop of Ambient Assisted Living (IWAAL 2012).* That project's data and details is located at: [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) and following extract taken from the UCI site page gives a summary overview. 
+This demonstration using the R programming language produced a tidy data set comprising averages of mean and std deviations columns from the raw data set. The raw data was produced by the *Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine*  experiment carried out by *International Workshop of Ambient Assisted Living (IWAAL 2012).* That project's data and details is located at: [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) and following extract taken from the UCI site page gives a summary overview. 
 
 ><i>The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.</i>
 
@@ -25,18 +25,18 @@ For details of the R implementation see the [README.md](README.md) and the scrip
 
 # Code Book
 
-The Raw data file comprised 561 numeric variables capturing the sensor data where this was filtered down, by this project, to 86 variables capturing summary and standard deviation measures. Also, each measure row includes a subject id and an actitvity. The Table below describes each of the variable presented in the resulting tidy data set.
+The Raw data file comprised 561 numeric variables capturing the sensor data where this was filtered down, by this project, to 86 variables capturing summary and standard deviation measures. Also, each measure row includes a subject id and an activity. The Table below describes each of the variable presented in the resulting tidy data set.
 
 
-* __activity__ - describes the activivity and can be one of: WALKING, WALKING\_UPSTAIRS, WALKING\_DOWNSTAIRS, 
+* __activity__ - describes the activity and can be one of: WALKING, WALKING\_UPSTAIRS, WALKING\_DOWNSTAIRS, 
 SITTING, STANDING, or LAYING
 * __subject__ - an integer between 1 and 30 identifying the volunteer in the experiment. 
 * __tbodyAccMeanX__ - Time domain body acceleration signal mean for X.
 * __tbodyAccMeanY__ - Time domain body acceleration signal mean for Y.
 * __tbodyAccMeanZ__ - Time domain body acceleration signal mean for Z.
-* __tbodyAccStdX__ - Time domain body acceleration signal standard deviation fo X.
-* __tbodyAccStdY__ - Time domain body acceleration signal standard deviation fo Y.
-* __tbodyAccStdZ__ - Time domain body acceleration signal standard deviation fo Z.
+* __tbodyAccStdX__ - Time domain body acceleration signal standard deviation for X.
+* __tbodyAccStdY__ - Time domain body acceleration signal standard deviation for Y.
+* __tbodyAccStdZ__ - Time domain body acceleration signal standard deviation for Z.
 * __tGravityAccMeanX__ - Time domain gravity acceleration signal mean for X.
 * __tGravityAccMeanY__ - Time domain gravity acceleration signal mean for Y.
 * __tGravityAccMeanZ__ - Time domain gravity acceleration signal mean for Z.
@@ -52,9 +52,9 @@ SITTING, STANDING, or LAYING
 * __tbodyGyroMeanX__ - Time domain body gyro signal mean for X.
 * __tbodyGyroMeanY__ - Time domain body gyro signal mean for Y.
 * __tbodyGyroMeanZ__ - Time domain body gyro signal mean for Z.
-* __tbodyGyroStdX__ - Time domain body gyro signal standard deviation fo X.
-* __tbodyGyroStdY__ - Time domain body gyro signal standard deviation fo Y.
-* __tbodyGyroStdZ__ - Time domain body gyro signal standard deviation fo Z.
+* __tbodyGyroStdX__ - Time domain body gyro signal standard deviation for X.
+* __tbodyGyroStdY__ - Time domain body gyro signal standard deviation for Y.
+* __tbodyGyroStdZ__ - Time domain body gyro signal standard deviation for Z.
 * __tbodyGyroJerkMeanX__ - Time domain body gyro jerk signal mean for X.
 * __tbodyGyroJerkMeanY__ - Time domain body gyro jerk signal mean for Y.
 * __tbodyGyroJerkMeanZ__ - Time domain body gyro jerk signal mean for Z.
@@ -62,8 +62,8 @@ SITTING, STANDING, or LAYING
 * __tbodyGyroJerkStdY__ - Time domain body gyro signal jerk standard deviation for Y.
 * __tbodyGyroJerkStdZ__ - Time domain body gyro signal jerk standard deviation for Z.
 * __tbodyAccMagMean__ - Time domain body acceleration magnitude signal mean.
-* __tbodyAccMagStd__ - Time domain body acceleration maganitude signal standard deviation.
-* __tGravityAccMagMean__ - Time domain gravity acceleration mangnitude signal mean.
+* __tbodyAccMagStd__ - Time domain body acceleration magnitude signal standard deviation.
+* __tGravityAccMagMean__ - Time domain gravity acceleration magnitude signal mean.
 * __tGravityAccMagStd__ - Time domain gravity acceleration magnitude standard deviation.
 * __tbodyAccJerkMagMean__ - Time domain body acceleration jerk magnitude mean.
 * __tbodyAccJerkMagStd__ - Time domain body acceleration jerk magnitude standard deviation.
