@@ -2,7 +2,7 @@
 
 # Introduction
 
-This demonstration using the R programming language produced a tidy data set comprising averages of mean and std deviations columns from the raw data set. The raw data was produced by the *Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine*  experiment carried out by *International Workshop of Ambient Assisted Living (IWAAL 2012).* That project's data and details is located at: [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) and following extract taken from the UCI site page gives a summary overview. 
+This demonstration using the R programming language produced a tidy data set comprising averages of mean and std deviations columns from the raw data set. The raw data was produced by the *Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine*  experiment carried out by *International Workshop of Ambient Assisted Living (IWAAL 2012).* That project's data and details is located at: [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) and the following extract taken from the UCI site page gives a summary overview. 
 
 ><i>The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.</i>
 
@@ -13,19 +13,19 @@ This demonstration using the R programming language produced a tidy data set com
 
 The following are the instructions that were followed to produce the tidy data set. 
 
-You should create one R script called run_analysis.R that does the following:
+Create one R script called run_analysis.R that does the following:
 
   1. Merges the training and the test sets to create one data set.
   2. Extracts only the measurements on the mean and standard deviation for each measurement.
-  3. Uses descriptive activity names to name the activities in the data set
-  4. Appropriately labels the data set with descriptive variable names.
+  3. Use descriptive activity names to name the activities in the data set
+  4. Appropriately label the data set with descriptive variable names.
   5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
   
 For details of the R implementation see the [README.md](README.md) and the script at: [run_analysis.R](run_analysis.R)
 
 # Code Book
 
-The Raw data file comprised 561 numeric variables capturing the sensor data where this was filtered down, by this project, to 86 variables capturing summary and standard deviation measures. Also, each measure row includes a subject id and an activity. The Table below describes each of the variable presented in the resulting tidy data set.
+The Raw data file comprised 561 numeric variables capturing the sensor data where this was filtered down, by this project, to 86 variables capturing mean and standard deviation measures. Also, each measure row includes a subject id and an activity. The list below describes each of the variable presented in the resulting tidy data set.
 
 
 * __activity__ - describes the activity and can be one of: WALKING, WALKING\_UPSTAIRS, WALKING\_DOWNSTAIRS, 
@@ -121,7 +121,7 @@ SITTING, STANDING, or LAYING
 
 #Data Illustration
 
-The figure below illustrates the tidy data set produced by this initiative by show the first 37 rows of data columns: activity, subject and first 8 numerical columns. 
+The figure below illustrates the tidy data set produced by this initiative by showing the first 37 rows for data columns: activity, subject and the first 8 numerical columns. 
 
 ![alt Data Illustration](summary-illustration.png)
 
