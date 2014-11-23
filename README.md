@@ -46,6 +46,17 @@ Because the sub folder/directory for *test* and *train* have the same structure 
 
 The majority of the script is coded using the base R libraries. The plyr library is used in step 7 and does a lot of the heavy lifting with great ease.
 
+# Running the script
+The script should be run from the R environment as described in the next section. There are no arguments to the script. 
+The script can be run from an empty folder/directory. After the first run of the script the data set folder, UCIHAR Dataset, will be created and populated. Follow these steps to execute the script:
+
+1. From the repository down load the run_analysis.R to a clean folder. 
+2. Start the R environment and the working directory to the folder from the previous step.
+3. source("run_analysis.R")
+4. run() 
+
+The rusults will be output to summary.txt 
+
 # Environment 
 
 The following are the environment details for the project:
@@ -54,3 +65,4 @@ The following are the environment details for the project:
 * Plyr Library Version - 1.8.1
 * R Studio Version 0.98.1049 – © 2009-2013 RStudio, Inc.
 * Microsoft Windows 8.1
+* Internet connection (for first run of script).
