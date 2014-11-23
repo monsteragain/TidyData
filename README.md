@@ -50,8 +50,8 @@ The majority of the script is coded using the base R libraries. The plyr library
 The script should be run from the R environment as described in the next section. There are no arguments to the script. 
 The script can be run from an empty folder/directory. After the first run of the script the data set folder, UCIHAR Dataset, will be created and populated. Follow these steps to execute the script:
 
-1. From the repository down load the run_analysis.R to a clean folder. 
-2. Start the R environment and the working directory to the folder from the previous step.
+1. From this repository down load the run_analysis.R to a clean folder. 
+2. Start the R environment and set the working directory to the folder from the previous step. Use setwd() here.
 3. source("run_analysis.R")
 4. run() 
 
