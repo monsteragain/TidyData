@@ -55,7 +55,7 @@ The script can be run from an empty folder/directory. After the first run of the
 3. source("run_analysis.R")
 4. run() 
 
-The rusults will be output to summary.txt 
+The results will be output to summary.txt 
 
 # Environment 
 
