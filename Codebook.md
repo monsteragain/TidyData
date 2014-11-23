@@ -30,8 +30,9 @@ For details of the R implementation see the [README.md](README.md) and the scrip
 
 # Code Book
 
-The Raw data file comprised 561 numeric variables capturing the sensor data where this was filtered down, by this project, to 86 variables capturing mean and standard deviation measures. Also, each measure row includes a subject id and an activity. The list below describes each of the variable presented in the resulting tidy data set.
+The Raw data file comprised 561 numeric feature variables where each of these feature variable was derived from data taken from acelerometer (meters/second/second values) and gyroscope (radians / second values) sensors. This project [Getting and Cleaning Data] filtered down the feature variables to 86 capturing only the mean and standard deviation variables. Each measure row is also merged with its subject id and an activity. 
 
+The last step, averaged each of the 86 feature variables by activity and subject where this gives the final tidy data set as required for this assignment - the list below presents these variables.
 
 * __activity__ - describes the activity and can be one of: WALKING, WALKING\_UPSTAIRS, WALKING\_DOWNSTAIRS, 
 SITTING, STANDING, or LAYING
